@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "66e8914f29d7b9d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "100 days of ML/Bash Scripting Cheat Sheet - Part 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "100 days of ML/Linux Commands Cheat Sheet for MLOPS.md",
+                "file": "100 days of ML/Bash Scripting Cheat Sheet - Part 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "100 days of ML/Linux Commands Cheat Sheet for MLOPS.md",
+                "file": "100 days of ML/Bash Scripting Cheat Sheet - Part 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "100 days of ML/Linux Commands Cheat Sheet for MLOPS.md"
+                "file": "100 days of ML/Bash Scripting Cheat Sheet - Part 1.md"
               }
             }
           }
@@ -172,11 +184,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a4756dd1442d3fee",
+  "active": "66e8914f29d7b9d1",
   "lastOpenFiles": [
+    "100 days of ML/Linux Commands Cheat Sheet for MLOPS.md",
+    "100 days of ML/Bash Scripting Cheat Sheet - Part 1.md",
     "100 days of ML/Introduction to AWS.md",
     "100 days of ML/Introduction to AWS IAM.md",
-    "100 days of ML/Linux Commands Cheat Sheet for MLOPS.md",
     "images/Pasted image 20230417221436.png",
     "images/Pasted image 20230417165816.png",
     "images",
