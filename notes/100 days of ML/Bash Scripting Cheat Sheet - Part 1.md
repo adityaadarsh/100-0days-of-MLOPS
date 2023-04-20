@@ -385,6 +385,88 @@ fi
 
 This script checks if the `htop` command is available by using the `-f` flag with the `test` command to check if the file `/usr/bin/htop` exists. If the file exists, the script prints the message `The htop command is available`. If the file does not exist, the script prints the message `The htop command is not available`, and then installs the `htop` command using `sudo apt-get install -y htop`.
 
+### Logical operators in Bash
+
+Bash supports various logical operators. Here is a table of logical operators supported by Bash:
+
+Operator
+
+Description
+
+-eq
+
+Equal to
+
+-ne
+
+Not equal to
+
+-gt
+
+Greater than
+
+-lt
+
+Less than
+
+-ge
+
+Greater than or equal to
+
+-le
+
+Less than or equal to
+
+!
+
+Logical NOT
+
+-a
+
+Logical AND
+
+-o
+
+Logical OR
+
+Here is an example block demonstrating the use of logical operators in Bash:
+
+```
+#!/bin/bash
+
+# This script demonstrates the use of logical operators in Bash
+
+# Declare some variables
+a=10
+b=3
+
+# Perform some logical operations
+if [ $a -ge 10 -a $b -le 3 ]
+then
+  echo "Both conditions are true"
+fi
+
+if [ $a -lt 20 -o $b -eq 3 ]
+then
+  echo "At least one condition is true"
+fi
+
+if ! [ $a -lt 5 ]
+then
+  echo "The condition is true"
+fi
+
+```
+
+This script declares two variables named `a` and `b` and performs various logical operations using those variables. The `echo` command is used to print a message to the terminal if the condition is true. The first `if` statement checks if both conditions are true using the `-a` operator. The second `if` statement checks if at least one condition is true using the `-o` operator. The third `if` statement uses the `!` operator to negate the condition. The output of the script will be:
+
+```
+Both conditions are true
+At least one condition is true
+The condition is true
+
+```
+
 ### **Q: When you run a command in BASH, how do you know if it fails or not?**
 
 ### Exit Code
@@ -434,3 +516,42 @@ fi
 ```
 
 This script installs the `some-package` package using `sudo apt-get install -y some-package`. It then uses the `$?` variable to get the exit code of the last command that was run, and checks if the exit code is not equal to `0`. If the exit code is not equal to `0`, the script prints the message `The package installation failed`. Otherwise, it prints the message `The package installation succeeded`.
+
+# Summary
+
+This cheat sheet covers basic Bash scripting concepts, including starting with Bash, defining and using variables, performing arithmetic operations, using `if` statements, logical operators, and exit codes.
+
+### Starting with Bash
+
+-   Create a file with extension `.sh`
+-   Use a text editor to edit the `.sh` file
+-   Add a shebang in the first line of the script to specify the interpreter, e.g., `#!/bin/bash`
+-   Set executable permissions for the script using `chmod +x script.sh`
+-   Run the script using `./script.sh`
+
+### Defining and Using Variables
+
+-   Variables are defined using the syntax `VARIABLE_NAME="value"`
+-   Reference a variable by prefixing its name with a `$` symbol, e.g., `echo $MY_VAR`
+-   System variables in Bash hold information about the system environment, e.g., `$HOME`, `$PATH`, `$USER`, `$SHELL`, `$PWD`, `$LANG`
+
+### Performing Arithmetic Operations
+
+-   Bash supports arithmetic operations using various operators, e.g., `+`, `,` , `/`, `%`, `*`
+-   Use double parenthesis to execute arithmetic operations, e.g., `$((a + b))`
+-   Use `eq`, `ne`, `gt`, `lt`, `ge`, `le`, `!`, `a`, `o` for logical operations
+
+### Using `if` Statements
+
+-   Use `if` statements to perform conditional execution of commands
+-   Use the syntax `if [ condition ]; then ... fi`
+-   Use `eq`, `ne`, `gt`, `lt`, `ge`, `le`, `!`, `a`, `o` for conditions
+
+### Using Exit Codes
+
+-   Bash returns an exit code that indicates whether the command succeeded or failed
+-   An exit code of `0` indicates success, while any other exit code indicates failure
+-   Reference the exit code of the last command that was run using the `$?` variable
+-   Check the exit code using `ne 0` for failure and `eq 0` for success
+
+### Cheat Sheet
